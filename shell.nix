@@ -1,5 +1,6 @@
 { python310
 , mkShell
+, libkrb5
 , sbt
 , nixpkgs-fmt
 }:
@@ -13,6 +14,7 @@ in
 mkShell {
   buildInputs = [
     sbt
+    libkrb5
     nixpkgs-fmt
     pythonEnv
   ];
